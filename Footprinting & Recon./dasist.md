@@ -30,22 +30,22 @@ This lab demonstrates the process of extracting domain and subdomain information
    - Click on the menu icon in the top-right corner of the page and navigate to `Resources -> Research Tools`.
    - Select `Site Report`.
 
-![Netcraft Website](https://i.imgur.com/sdTqRU9.png)
-
 3. **Run a Site Report**  
    - Enter the URL `https://www.certifiedhacker.com` in the "What’s that site running?" search box and click `LOOK UP`.
 
-   ![Site Report Placeholder](images/netcraft_site_report.png)
+   ![Netcraft Website](https://i.imgur.com/sdTqRU9.png)
 
 4. **Extract Information**  
    - Review the results on the site report page.
    - Information such as background, hosting history, network details, and subdomains is displayed.
+     
+   ![Netcraft Website](https://i.imgur.com/Sl5ASZH.png)
 
 5. **View Subdomains**  
    - In the Network section, click on the target domain (`certifiedhacker.com`) to view a list of subdomains.
    - The results include subdomains, operating systems, and netblocks.
 
-   ![Subdomain Placeholder](images/netcraft_subdomains.png)
+   ![Subdomain](https://i.imgur.com/EAH8lLj.png)
 
 ---
 
@@ -55,7 +55,7 @@ This lab demonstrates the process of extracting domain and subdomain information
    - Open a new tab in Mozilla Firefox and go to DNSDumpster.
    - Enter the target domain `certifiedhacker.com` in the search box and click `Start Test`.
 
-   ![DNSDumpster Placeholder](images/dnsdumpster_start_test.png)
+   ![DNSDumpster](https://i.imgur.com/Lt3YR7u.png)
 
 2. **Extract GeoIP and DNS Records**  
    - Scroll down to view:
@@ -64,18 +64,17 @@ This lab demonstrates the process of extracting domain and subdomain information
      - Host Records (A)
      - IP Addresses
 
-   ![DNS Records Placeholder](images/dns_records.png)
-
 3. **Analyze Domain Mapping**  
    - Review the domain mapping diagram provided by DNSDumpster.
    - Use the `Download .xlsx` option to save the list of hosts.
 
-   ![Domain Mapping Placeholder](images/dns_mapping.png)
+   ![Domain Mapping](https://i.imgur.com/xySbaoV.png)
 
 4. **Analyze Downloaded Data**  
    - Open the downloaded `.xlsx` file in LibreOffice.  
      The Excel sheet displays the details such as Hostname, IP Address, Reverse DNS, Netblock Owner, Country, HTTP Title, etc.
 
+   ![Domain Mapping](https://i.imgur.com/lmS2jVj.png)
 ---
 
 ## Key Learnings
