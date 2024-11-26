@@ -30,7 +30,7 @@ This lab demonstrates the process of extracting domain and subdomain information
    - Click on the menu icon in the top-right corner of the page and navigate to `Resources -> Research Tools`.
    - Select `Site Report`.
 
-   ![https://imgur.com/a/0UcaFDV)
+   ![https://imgur.com/a/ng6HOkN)
 
 3. **Run a Site Report**  
    - Enter the URL `https://www.certifiedhacker.com` in the "What’s that site running?" search box and click `LOOK UP`.
