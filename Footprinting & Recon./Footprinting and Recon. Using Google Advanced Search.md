@@ -48,7 +48,7 @@ The goal of this lab was to demonstrate the process of footprinting as part of t
   - Limited the search to the domain `eccouncil.org` using the `site` operator.
 - **Outcome:** Multiple login pages (e.g., frontend, iLabs) were identified. These could be used for penetration testing or assessing vulnerabilities.
   
-![Screenshot showing identified login pages]
+![Screenshot showing identified login pages](https://i.imgur.com/9FdoP5L.png)
 
 #### Searching for Publicly Available Documents
 - **Search Query:** `filetype:pdf ceh site:eccouncil.org`
@@ -57,7 +57,7 @@ The goal of this lab was to demonstrate the process of footprinting as part of t
   - Searched specifically for documents related to "CEH" (Certified Ethical Hacker).
 - **Outcome:** Found sensitive documents like the CEH course brochure, which can provide insights into an organization’s products, structure, and potential vulnerabilities.
 
-![Screenshot showing search results for CEH documents]
+![Screenshot showing search results for CEH documents](https://i.imgur.com/1hdXpSa.png)
 
 ---
 
