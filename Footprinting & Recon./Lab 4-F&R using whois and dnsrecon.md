@@ -1,85 +1,86 @@
 
-# Lab-Bericht: Whois-Footprinting mit DNS Recon
+# Lab Report: Whois Footprinting with DNS Recon
 
-## Host-System
-- **Gerät:** MacBook Air (M1, 2020)
-- **Prozessor:** Apple M1
+## Host System
+- **Device:** MacBook Air (M1, 2020)
+- **Processor:** Apple M1
 - **RAM:** 8 GB
-- **Betriebssystem:** macOS Sequoia 15.1.1
+- **Operating System:** macOS Sequoia 15.1.1
 - **Browser:** Mozilla Firefox
 
-## Virtuelle Maschine
-- **Software:** UTM (QEMU-basiert)
-- **Gast-Betriebssystem:** Parrot Security OS
+## Virtual Machine
+- **Software:** UTM (QEMU-based)
+- **Guest OS:** Parrot Security OS
 
-## Lab-Ziel
-Das Ziel dieses Labs ist die Sammlung von Informationen über Ziel-Domains durch die Nutzung von Whois und DNS Recon. Diese Tools unterstützen die Analyse von Netzwerken, Domain-Registrierungen und DNS-Daten. Die gesammelten Informationen liefern Ansätze für weitere Tests und Sicherheitsmaßnahmen.
+## Lab Objective
+The objective of this lab is to gather information about target domains using Whois and DNS Recon. These tools assist in analyzing networks, domain registrations, and DNS data. The collected information provides insights for further testing and security assessments.
 
-## Task 1: Whois-Lookup
+## Task 1: Whois Lookup
 
-### Durchführung mit dem Terminal
+### Execution via Terminal
 ```bash
 whois www.certifiedhacker.com
 ```
-**Ergebnisse:**  
-Die Abfrage lieferte keine Daten. Der Befehl zeigte die Nachricht „No match for 'WWW.CERTIFIEDHACKER.COM'“. Dies deutet darauf hin, dass keine Informationen über diese Domain in der standardmäßigen Whois-Datenbank gefunden wurden.
+**Results:**  
+The query returned no data. The command displayed the message "No match for 'WWW.CERTIFIEDHACKER.COM'." This indicates that no information about this domain was found in the standard Whois database.
 
 ![Screenshot Placeholder](URL_TO_SCREENSHOTS)
 
-### Durchführung im Webbrowser
-Über den Webbrowser wurde ein Whois-Lookup mit DomainTools durchgeführt:
+### Execution via Web Browser
+A Whois lookup was performed using the DomainTools website:  
 [https://whois.domaintools.com](https://whois.domaintools.com)
 
 **Screenshots:**  
-1. **Eingabemaske**:  
+1. **Search Interface**:  
    ![Screenshot Placeholder](URL_TO_SCREENSHOTS)  
-   **Beschreibung:** Zeigt die Suchoberfläche von DomainTools, wo die Domain eingegeben wurde. Optionen wie „Monitor Domain Properties“ und „Reverse IP Address Lookup“ bieten Möglichkeiten für Reverse Engineering.
+   **Description:** Displays the search interface of DomainTools where the domain was entered. Options like "Monitor Domain Properties" and "Reverse IP Address Lookup" provide capabilities for reverse engineering.
 
-2. **Detailansicht**:  
+2. **Detailed View**:  
    ![Screenshot Placeholder](URL_TO_SCREENSHOTS)  
-   **Beschreibung:** Zusätzliche Informationen wie Admin-E-Mails und technische Ansprechpartner sind sichtbar.
+   **Description:** Shows additional information such as admin emails and technical contacts, which are useful for reconnaissance.
 
 ---
 
 ## Task 2: DNS Recon
 
-### Vorbereitung
-Falls das Tool nicht installiert war, wurde es mit den folgenden Befehlen installiert:
+### Preparation
+If the tool was not pre-installed, it was installed using the following commands:
 ```bash
 sudo apt update
 sudo apt install dnsrecon
 ```
 
-### Durchführung
-DNS Recon wurde mit dem folgenden Befehl ausgeführt:
+### Execution
+DNS Recon was executed with the following command:
 ```bash
 dnsrecon -d certifiedhacker.com
 ```
 
-**Ergebnisse:**  
-- **DNSSEC**: Nicht konfiguriert für die Domain. Dies bedeutet, dass keine zusätzlichen Sicherheitsmaßnahmen für DNS-Einträge eingerichtet sind.  
-- **Nameserver (NS)**: `ns1.bluehost.com` und `ns2.bluehost.com`.  
-- **MX-Records**: Mailserver `mail.certifiedhacker.com`.  
-- **SRV-Records**: 12 SRV-Einträge wurden gefunden, darunter Dienste wie `_autodiscover._tcp` und `_caldav._tcp`.
+**Results:**  
+- **DNSSEC**: Not configured for the domain, indicating a lack of additional security measures for DNS entries.  
+- **Nameservers (NS)**: `ns1.bluehost.com` and `ns2.bluehost.com`.  
+- **MX Records**: Mail server `mail.certifiedhacker.com`.  
+- **SRV Records**: 12 SRV entries were found, including services like `_autodiscover._tcp` and `_caldav._tcp`.
 
 ![Screenshot Placeholder](URL_TO_SCREENSHOTS)  
-**Beschreibung:**  
-Der Screenshot zeigt die Ausgabe des Befehls. Die identifizierten SRV-Records geben Hinweise auf verwendete Anwendungen oder Konfigurationen, die für weitere Tests genutzt werden könnten.
+**Description:**  
+The screenshot shows the command output. The identified SRV records provide insights into applications or configurations that could be targeted for further testing.
 
 ---
 
 ## Key Learnings
 
-1. **Unterschiedliche Tools ergänzen sich**  
-   Whois bietet grundlegende Registrierungsinformationen, während DNS Recon tiefere technische Details liefert.
+1. **Complementary Tools**  
+   Whois provides basic registration details, while DNS Recon offers deeper technical insights.
 
-2. **Potenzielle Schwachstellen identifizieren**  
-   Die Analyse von SRV-Records und DNSSEC-Konfigurationen kann Angriffsvektoren aufzeigen.
+2. **Identifying Potential Vulnerabilities**  
+   Analysis of SRV records and DNSSEC configurations can reveal attack vectors.
 
-3. **Datenquellen verstehen**  
-   Webtools wie DomainTools bieten erweiterten Zugang zu Informationen.
+3. **Understanding Data Sources**  
+   Web tools like DomainTools offer extended access to information not available through local queries.
 
 ---
 
-## Fazit
-Dieses Lab hat die Wichtigkeit der Nutzung unterschiedlicher Tools wie Whois und DNS Recon gezeigt. Während Whois grundlegende Informationen liefert, erweitert DNS Recon die Analyse durch technische DNS-Daten. Die Kombination dieser Tools ermöglicht eine tiefgehende Sicherheitsbewertung.
+## Conclusion
+This lab highlights the importance of using different tools such as Whois and DNS Recon. While Whois provides basic information, DNS Recon extends the analysis with technical DNS data. Combining these tools enables a comprehensive security assessment.
+
