@@ -66,6 +66,8 @@ The goal of this lab was to collect personal and professional information about 
 
 2. **Analyze Results**  
    - Review the results in the terminal, which include platform names and URLs for profiles associated with "Thomas Müller."
+     
+     ![Sherlock Results](https://i.imgur.com/E61fZK3.png)
 
 3. **Save Results to a File**  
    - Use the following command to save the results to a text file on the Desktop:
@@ -84,7 +86,7 @@ The goal of this lab was to collect personal and professional information about 
      ```bash
      cat ~/Desktop/results_thomas_mueller.txt
      ```
-
+     ![Sherlock File](https://i.imgur.com/RugFA9Q.png)
 ---
 
 ### Task 4: Additional Search with Social Searcher
