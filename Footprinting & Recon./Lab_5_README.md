@@ -47,9 +47,9 @@ For this analysis, the **Maltego Community Edition** was used. After registering
 
 #### Screenshot Placeholders
 
-![Screenshot Placeholder 1](URL_TO_SCREENSHOT_1)
-![Screenshot Placeholder 2](URL_TO_SCREENSHOT_2)
-![Screenshot Placeholder 3](URL_TO_SCREENSHOT_3)
+![Maltego Search](https://i.imgur.com/1ttNelf.png)
+![Maltego Results](https://i.imgur.com/k3Dy7Ml.png)
+![MAltego Subdomains](https://i.imgur.com/3VKWku2.png)
 
 ---
 
@@ -97,7 +97,7 @@ A comparison of the results from theHarvester and Maltego to check for consisten
 
 #### Screenshot Placeholder
 
-![Screenshot Placeholder](URL_TO_SCREENSHOT_4)
+![Comparison](https://i.imgur.com/nw13ee3.png)
 
 ---
 
