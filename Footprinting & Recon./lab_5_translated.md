@@ -7,7 +7,7 @@ Host System
 - Betriebssystem: macOS Ventura
 - Browser: Mozilla Firefox (für Maltego-Account-Erstellung)
 
-Virtuelle Maschine
+Virtual Machine
 
 - Software: UTM (QEMU-basiert)
 - Guest OS: Parrot Security OS
@@ -30,7 +30,7 @@ Tools
 Schritte im Lab
 Task 1: Untersuchung der Daten mit Maltego
 Für diese Analyse wurde Maltego Community Edition verwendet. Nach der Registrierung für die Community-Version, die bis zu 200 Transforms ermöglicht, wurde die Domain *hackthissite.org* als Ziel eingegeben, ohne zuvor Daten zu importieren.
-Durchführung:
+Execution:
 Daten wurden direkt in Maltego eingegeben, indem *Specified Target* für die Domain *hackthissite.org* verwendet wurde. Zusätzlich wurde der VirusTotal API-Schlüssel registriert und in Maltego eingebunden, um weitere Informationen wie Subdomains und E-Mail-Adressen zu erhalten.
 Screenshot:
 
@@ -43,7 +43,7 @@ Task 2: Sammlung von Daten mit theHarvester
 
 theHarvester wird genutzt, um Subdomains, E-Mails und IP-Adressen der Ziel-Domain passiv zu sammeln.
 
-Durchführung:
+Execution:
 
 1. theHarvester ausführen:
  theharvester -d hackthissite.org -b hackertarget
@@ -52,7 +52,7 @@ Durchführung:
  - -d hackthissite.org: Die Ziel-Domain.
  - -b hackertarget: Hackertarget als Datenquelle.
 
-2. Ergebnisse:
+2. Results:
  - Gefundene Subdomains:
  mail.hackthissite.org
  2v3dev-cdn.hackthissite.org
@@ -62,9 +62,9 @@ Durchführung:
  2v3dev-cdn.hackthissite.org - 192.168.1.20
 
 
-Task 3: Vergleich der Ergebnisse von theHarvester und Maltego (Ergebnisse siehe Screenshot 4).
+Task 3: Vergleich der Results von theHarvester und Maltego (Results siehe Screenshot 4).
 
-Gegenüberstellung der Ergebnisse von theHarvester und Maltego, um Konsistenz und zusätzliche Erkenntnisse zu prüfen.
+Gegenüberstellung der Results von theHarvester und Maltego, um Konsistenz und zusätzliche Erkenntnisse zu prüfen.
 
 ![Comparison](https://i.imgur.com/nw13ee3.png)
 
@@ -78,14 +78,14 @@ Gegenüberstellung:
 
 Interpretation:
 
-- Konsistenz: Beide Tools liefern übereinstimmende Ergebnisse.
+- Konsistenz: Beide Tools liefern übereinstimmende Results.
 - Ergänzungen: Maltego bietet eine visuelle Darstellung und zeigt zusätzliche Verbindungen zwischen Entitäten.
 
 Screenshot:
-Screenshot 3: Zeigt die Gegenüberstellung der Ergebnisse von theHarvester (Terminal-Ausgabe) und Maltego (Graph).
-Zusammenfassung und Fazit
+Screenshot 3: Zeigt die Gegenüberstellung der Results von theHarvester (Terminal-Ausgabe) und Maltego (Graph).
+Summary and Conclusion
 
-1. Ergebnisse:
+1. Results:
  - theHarvester liefert eine tabellarische Ausgabe von Subdomains, E-Mails und IP-Adressen.
  - Maltego ergänzt diese Informationen durch eine visuelle Darstellung und zeigt Verbindungen zwischen den Entitäten.
 
