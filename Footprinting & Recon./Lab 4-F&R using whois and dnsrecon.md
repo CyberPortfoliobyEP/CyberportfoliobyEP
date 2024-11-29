@@ -24,7 +24,7 @@ whois www.certifiedhacker.com
 **Results:**  
 The query returned no data. The command displayed the message "No match for 'WWW.CERTIFIEDHACKER.COM'." This indicates that no information about this domain was found in the standard Whois database.
 
-![Screenshot Placeholder](URL_TO_SCREENSHOTS)
+![WHOIS no Results](https://i.imgur.com/FdElhXj.png)
 
 ### Execution via Web Browser
 A Whois lookup was performed using the DomainTools website:  
@@ -32,11 +32,12 @@ A Whois lookup was performed using the DomainTools website:
 
 **Screenshots:**  
 1. **Search Interface**:  
-   ![Screenshot Placeholder](URL_TO_SCREENSHOTS)  
+   ![WHOIS Browser Overview](https://i.imgur.com/M0DDwdE.png)
+   ![WHOIS Browser Results](https://i.imgur.com/g0mVATu.png)    
    **Description:** Displays the search interface of DomainTools where the domain was entered. Options like "Monitor Domain Properties" and "Reverse IP Address Lookup" provide capabilities for reverse engineering.
 
-2. **Detailed View**:  
-   ![Screenshot Placeholder](URL_TO_SCREENSHOTS)  
+3. **Detailed View**:  
+   ![Details](https://i.imgur.com/ShFS5N8.png)  
    **Description:** Shows additional information such as admin emails and technical contacts, which are useful for reconnaissance.
 
 ---
@@ -62,7 +63,7 @@ dnsrecon -d certifiedhacker.com
 - **MX Records**: Mail server `mail.certifiedhacker.com`.  
 - **SRV Records**: 12 SRV entries were found, including services like `_autodiscover._tcp` and `_caldav._tcp`.
 
-![Screenshot Placeholder](URL_TO_SCREENSHOTS)  
+![DNSrecon output](https://i.imgur.com/ZpKQnaC.png)  
 **Description:**  
 The screenshot shows the command output. The identified SRV records provide insights into applications or configurations that could be targeted for further testing.
 
