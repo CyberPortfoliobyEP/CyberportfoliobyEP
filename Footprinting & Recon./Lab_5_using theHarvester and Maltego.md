@@ -1,5 +1,5 @@
 
-## Footprinting & Reconnaissance
+## Footprinting & Reconnaissance using TheHArvester and Maltego
 
 **Host System**
 
@@ -25,7 +25,8 @@
 
 The goal of this lab is to perform Footprinting and Reconnaissance on the target domain (`hackthissite.org`) using:
 1. **theHarvester**: To collect subdomains, IPs, and email addresses.
-2. **Maltego Community Edition**: To visualize and analyze the collected data.
+2. **Maltego Community Edition**: Finding and mapping the Subdomainds, IP´s and relevant E-Mails.
+3. Comparing both Results from #thHarvester and #Maltego.
 
 Additionally, a free Maltego account was created to use the Community Edition, which allows up to 200 transforms with pre-installed data sources.
 
