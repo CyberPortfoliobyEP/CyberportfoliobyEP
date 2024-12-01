@@ -27,7 +27,9 @@ The goal of this lab was to identify active hosts in a target network using mult
   `nmap -sn -PR 10.10.1.22`
 - **Description**: Sends ARP requests to the target IP. An ARP reply indicates that the host is active.
 - **Result**: Host `10.10.1.22` was identified as active.
-
+  
+     ![Results](https://i.imgur.com/CyWMg7X.png)
+  
 ---
 
 ### 2. UDP Ping Scan
@@ -37,6 +39,8 @@ The goal of this lab was to identify active hosts in a target network using mult
 - **Description**: Sends UDP packets to the target IP. A response indicates that the host is active.
 - **Result**: Host `10.10.1.22` responded successfully.
 
+
+     ![Results](https://i.imgur.com/z0fcP3D.png)
 ---
 
 ### 3. ICMP ECHO Ping Scan
@@ -45,6 +49,8 @@ The goal of this lab was to identify active hosts in a target network using mult
   `nmap -sn -PE 10.10.1.22`
 - **Description**: Sends ICMP ECHO requests to the target IP. An ICMP ECHO reply indicates that the host is active.
 - **Result**: Host `10.10.1.22` was successfully identified as active.
+
+     ![Results](https://i.imgur.com/sAc9Dip.png)
 
 ---
 
@@ -58,6 +64,8 @@ The goal of this lab was to identify active hosts in a target network using mult
   - `10.10.1.18`  
   - `10.10.1.22`
 
+     ![Results](https://i.imgur.com/Xz9YQKt.png)
+
 ---
 
 ### 5. ICMP Timestamp Ping Scan
@@ -66,6 +74,8 @@ The goal of this lab was to identify active hosts in a target network using mult
   `nmap -sn -PP 10.10.1.22`
 - **Description**: Queries the current time from the target host via ICMP Timestamp. Useful when ICMP ECHO is blocked.
 - **Result**: Host `10.10.1.22` responded successfully.
+
+  ![Results](https://i.imgur.com/MxUOeFJ.png)
 
 ---
 
