@@ -30,7 +30,10 @@ The goal of this lab is to demonstrate methods to bypass IDS and firewall system
 - **Results:**
   - Nmap successfully identified open ports and services on the target machine.
   - **Wireshark Analysis:** Fragmented packets were captured and displayed correctly.
-
+    
+      ![Results](https://i.imgur.com/KbxT04s.png)
+    
+      ![Results](https://i.imgur.com/KbxT04s.png)
 ---
 
 ### 2. Source Port Manipulation
@@ -43,7 +46,10 @@ The goal of this lab is to demonstrate methods to bypass IDS and firewall system
 - **Results:**
   - Nmap displayed all open TCP ports and the services running on them, regardless of the active firewall.
   - **Wireshark Analysis:** Packets initiated with port 80 as the source port were visible.
-
+    
+      ![Results](https://i.imgur.com/iycDm40.png)
+    
+      ![Results](https://i.imgur.com/Adi363k.png)
 ---
 
 ### 3. MTU Size Adjustment
@@ -56,6 +62,10 @@ The goal of this lab is to demonstrate methods to bypass IDS and firewall system
 - **Results:**
   - The scans successfully retrieved the expected information about open ports without triggering security mechanisms.
   - **Wireshark Analysis:** Captured packets with a maximum size of 8 bytes were displayed correctly.
+
+      ![Results](https://i.imgur.com/jHccOUb.png)
+    
+      ![Results](https://i.imgur.com/mPa5JO9.png)
 
 ---
 
