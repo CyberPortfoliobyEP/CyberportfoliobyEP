@@ -34,6 +34,10 @@ Operating system detection (OS Discovery) is a central step in penetration testi
   - **NetBIOS Name**: WIN-SERVER  
   - **Additional Details**: Service versions, IIS version, and other host information.
 
+      ![Results](https://i.imgur.com/KbxT04s.png)
+    
+      ![Results](https://i.imgur.com/R4RBrBm.png)
+
 ---
 
 ### 2. Operating System Detection with `-O`
@@ -61,8 +65,10 @@ Operating system detection (OS Discovery) is a central step in penetration testi
 - **Results**:  
   - **Operating System**: Windows Server 2022  
   - **NetBIOS Computer Name**: WIN-SERVER  
-  - **Workgroup**: WORKGROUP  
-  - **Current System Time**: 14:32:45 UTC
+  - **Current System Time**: 11:40:24 UTC
+
+      ![Results](https://i.imgur.com/N2aQlzZ.png)
+
 
 ---
 
