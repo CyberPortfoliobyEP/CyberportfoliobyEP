@@ -62,15 +62,14 @@ set RHOSTS 10.10.1.5-23
 set THREADS 50
 run
 ```
-      ![Results](https://i.imgur.com/vg2efje.png)
-
 - **Description:**  
   This SYN scan targeted the range 10.10.1.5-23 to specifically identify open ports, such as port 80. The use of multiple threads ensures efficient scanning.
-
 
 - **Results:**  
   - Port 80 was identified as open on several hosts within the target range.
 
+      ![Results](https://i.imgur.com/vg2efje.png)
+    
       ![Results](https://i.imgur.com/5YGjAWY.png)
 
 ---
