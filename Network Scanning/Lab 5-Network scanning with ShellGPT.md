@@ -21,7 +21,7 @@ Dieses Lab demonstriert den Einsatz von ShellGPT für Netzwerkscans. Der Fokus l
 
 ## Task 1: ICMP-Scan
 ```bash
-`sgpt --chat scan --shell "Use hping3 to perform ICMP scanning on the target IP address 10.10.1.11 and stop after 10 iterations"`
+`sgpt --chat scan --shell "Use hping3 to perform ICMP scanning on the target IP address 10.10.1.11 and stop after 10 iterations"
 ```
 - **Beschreibung:** Hping3 ist ein flexibles Netzwerktool, das benutzerdefinierte Pakete generieren und senden kann. Es unterstützt uns dabei, spezifische ICMP-Pakete an die Ziel-IP 10.10.1.11 zu senden, um deren Erreichbarkeit zu überprüfen und Antwortzeiten zu messen.
 - **Ergebnisse:** Alle 10 ICMP-Pakete wurden erfolgreich beantwortet. Die durchschnittliche Antwortzeit betrug 1,2 ms.
