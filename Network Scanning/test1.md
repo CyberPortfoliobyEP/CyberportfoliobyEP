@@ -17,23 +17,34 @@
 
 This lab demonstrates the use of ShellGPT for network scanning. The focus is on verifying the target machine's reachability via ICMP scans, identifying active hosts, performing XMAS scans, and conducting firewall/operating system scans to identify vulnerabilities and gather system information.
 
+---
 
 ## 1. ICMP Scan
 
+- **Command**: 
 `sgpt --chat scan --shell "Use hping3 to perform ICMP scanning on the target IP address 10.10.1.11 and stop after 10 iterations"`
 
 - **Description:** Hping3 is a flexible network tool capable of generating and sending custom packets. It was used to send specific ICMP packets to the target IP `10.10.1.11` to verify its reachability and measure response times.
 - **Results:** All 10 ICMP packets were successfully answered. The average response time was 1.2 ms.
+  
+      ![Results](https://i.imgur.com/Dieq4AT.png)
+---
 
 ## 2. Host Discovery
 
+- **Command**: 
 `sgpt --chat scan --shell "Perform an XMAS scan on the first two targets from the file scan1.txt"`
 
 - **Description:** Identifies active hosts in the subnet `10.10.1.0/24`. The IP addresses of the hosts are stored in `scan1.txt`.
 - **Results:** Five active hosts were identified: `10.10.1.11`, `10.10.1.12`, `10.10.1.13`, `10.10.1.14`, `10.10.1.15`.
+  
+      ![Results](https://i.imgur.com/RysfcYI.png)
+  
+---
 
 ## 3. XMAS Scan
 
+- **Command**: 
 `sgpt --chat scan --shell "Perform an XMAS scan on the first two targets from the file scan1.txt"`
 
 - **Description:** The XMAS scan sends specific TCP packets with the **FIN**, **PSH**, and **URG** flags to identify vulnerabilities such as unfiltered ports or open firewalls. Although the command specifies scanning the first two targets from `scan1.txt`, three IP addresses were scanned in this instance.
@@ -41,8 +52,13 @@ This lab demonstrates the use of ShellGPT for network scanning. The focus is on 
   - Port 80 (HTTP)
   - Port 443 (HTTPS)
 
+      ![Results](https://i.imgur.com/GM9lepL.png)
+    
+---
+
 ## 4. Firewall and Operating System Scan
 
+- **Command**: 
 `sgpt --chat scan --shell "Discover if there is any Firewall active on the subnet 10.10.1.0/24 and then find the list of the IP addresses of the firewalls and operating systems"`
 
 - **Description:** Using ShellGPT and Nmap, active firewalls were detected, and attempts were made to identify operating systems. The results were saved in two files: `firewalls.txt` and `os_info.txt`.
@@ -53,6 +69,10 @@ This lab demonstrates the use of ShellGPT for network scanning. The focus is on 
   - **Operating Systems Identified:**
     - `10.10.1.11`: Linux 4.X/5.X.
     - `10.10.1.14`: Microsoft Windows 10.
+      
+      ![Results](https://i.imgur.com/gaxro3n.png)
+      
+---
 
 ## Summary
 
