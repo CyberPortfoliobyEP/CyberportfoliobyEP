@@ -20,36 +20,48 @@ Dieses Lab demonstriert den Einsatz von ShellGPT für Netzwerkscans. Der Fokus l
 ---
 
 ## Task 1: ICMP-Scan
+
 ```bash
 `sgpt --chat scan --shell "Use hping3 to perform ICMP scanning on the target IP address 10.10.1.11 and stop after 10 iterations"
 ```
+  [Results](https://i.imgur.com/z1y83ki.png)
+  
 - **Beschreibung:** Hping3 ist ein flexibles Netzwerktool, das benutzerdefinierte Pakete generieren und senden kann. Es unterstützt uns dabei, spezifische ICMP-Pakete an die Ziel-IP 10.10.1.11 zu senden, um deren Erreichbarkeit zu überprüfen und Antwortzeiten zu messen.
 - **Ergebnisse:** Alle 10 ICMP-Pakete wurden erfolgreich beantwortet. Die durchschnittliche Antwortzeit betrug 1,2 ms.
 
 ---
 
 ## Task 2: Host Discovery
+
 ```bash
 `sgpt --chat scan --shell "Perform an XMAS scan on the first two targets from the file scan1.txt"`
 ```
+  [Results](https://i.imgur.com/Dieq4AT.png)
+  
 - **Beschreibung:** Identifiziert aktive Hosts im Subnetz 10.10.1.0/24. Die IP-Adressen der Hosts werden in `scan1.txt` gespeichert.
 - **Ergebnisse:** Es wurden 5 aktive Hosts identifiziert: 10.10.1.11, 10.10.1.12, 10.10.1.13, 10.10.1.14, 10.10.1.15.
 
 ---
 
 ## Task 3: XMAS-Scan
+
 ```bash
 `sgpt --chat scan --shell "Perform an XMAS scan on the first two targets from the file scan1.txt"`
 ```
+
 - **Beschreibung:** Der XMAS-Scan sendet spezielle TCP-Pakete mit den Flags FIN, PSH, und URG, um Schwachstellen wie nicht blockierte Ports oder offene Firewalls zu identifizieren. Obwohl der Befehl angibt, die ersten zwei Ziele aus `scan1.txt` zu scannen, wurden in diesem Fall drei IP-Adressen gescannt.
 - **Ergebnisse:** Auf 10.10.1.9 und 10.10.1.10 wurden keine auffälligen Ports identifiziert. Auf 10.10.1.11 wurden zwei Schwachstellen auf den Ports 80 (HTTP) und 443 (HTTPS) gefunden.
 
 ---
 
 ## Task 4: Firewall- und Betriebssystem-Scan
+
 ```bash
 `sgpt --chat scan --shell "Discover if there is any Firewall active on the subnet 10.10.1.0/24 and then find the list of the IP addresses of the firewalls and operating systems"`
 ```
+
+[img]https://i.imgur.com/Dieq4AT.png[/img]
+
 - **Beschreibung:** Mithilfe von ShellGPT und Nmap wurde geprüft, ob Firewalls aktiv sind, und gleichzeitig versucht, Betriebssysteme zu identifizieren. Die Ergebnisse wurden in zwei Dateien gespeichert: `firewalls.txt` und `os_info.txt`.
 - **Ergebnisse:** Firewall-Aktivität wurde bei folgenden Hosts festgestellt: 10.10.1.14 (Microsoft Windows 10 mit aktiver Stateful Firewall), 10.10.1.19 (FreeBSD 11.X). Betriebssysteme wurden für die folgenden Hosts identifiziert: 10.10.1.11 (Linux 4.X/5.X), 10.10.1.14 (Microsoft Windows 10).
 
