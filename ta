@@ -1,2 +1,10 @@
 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
 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
+curl https://api.openai.com/v1/chat/completions \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer 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" \
+  -d '{
+     "model": "gpt-4o-mini",
+     "messages": [{"role": "user", "content": "Say this is a test!"}],
+     "temperature": 0.7
+   }'
