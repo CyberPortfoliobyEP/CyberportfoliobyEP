@@ -66,9 +66,12 @@ curl -I https://api.openai.com/v1/chat/completions
 ```
 **Result:** If configured correctly, you should receive a response with status code 200 OK. Any issues may return 404 Not Found or 500 Internal Server Error.
 
-Screenshot API Key input + Verifying
-[img](https://i.imgur.com/tROp1mB.png)
-[img]([https://i.imgur.com/hS9A1ck.png)
+**Screenshot API Key input + Verifying**
+
+   
+![Verifying](https://i.imgur.com/tROp1mB.png)
+
+![Setup](https://i.imgur.com/hS9A1ck.png)
 
 ---
 
