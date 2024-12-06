@@ -29,7 +29,7 @@ This lab demonstrates how to use ShellGPT to generate a Python script for an ICM
 ```bash
 sudo apt update
 sudo apt install gh
-
+```
 ---
 
 ## Steps
@@ -41,7 +41,7 @@ sudo apt install gh
 
 ```bash
 gh auth login
-
+```
    - Select `GitHub.com` and choose `HTTPS` as the protocol.
    - Use the **browser-based login** option:
      - Copy the one-time code displayed in the terminal.
@@ -53,12 +53,12 @@ gh auth login
 
 ```bash
 git clone https://github.com/CyberPortfolioByEP/CyberPortfolioByEP.git
-
+```
    - Navigate to the `AI` directory:
 
 ```bash
 cd CyberPortfolioByEP/AI
-
+```
 ---
 
 ### Step 2: Generate the ICMP Scan Script
@@ -68,7 +68,7 @@ cd CyberPortfolioByEP/AI
 
 ```bash
 sgpt --chat scan --shell "Generate a Python script to perform an ICMP scan on the subnet 10.10.1.0/24"
-
+```
    - ShellGPT will create a Python script, saving it as `icmp_scan.py` in your current directory.
 
 2. **Verify the Generated Script:**
@@ -76,7 +76,7 @@ sgpt --chat scan --shell "Generate a Python script to perform an ICMP scan on th
 
 ```bash
 nano icmp_scan.py
-
+```
    - Ensure the script is correctly formatted and executable.
 
 ---
@@ -87,7 +87,7 @@ nano icmp_scan.py
 
 ```bash
 mv ~/icmp_scan.py ~/CyberPortfolioByEP/AI/
-
+```
 2. **Navigate to the Directory:**
 
 ```bash
@@ -101,20 +101,20 @@ cd ~/CyberPortfolioByEP/AI/
 
 ```bash
 git add icmp_scan.py
-
+```
 2. **Commit the File:**
    - Open the commit editor:
 
 ```bash
 git commit
-
+```
    - Add a meaningful commit message (e.g., "Added ICMP scan script") and save.
 
 3. **Push to GitHub:**
 
 ```bash
 git push origin main
-
+```
 ---
 
 ## Step 5: Execute the Script
@@ -122,9 +122,9 @@ git push origin main
 1. **Run the Script:**
    - Execute the script to perform the ICMP scan:
 
-``bash
+```bash
 python3 icmp_scan.py
-
+```
 2. **Verify the Output:**
    - Confirm that the script scans the specified subnet and displays active hosts.
 
