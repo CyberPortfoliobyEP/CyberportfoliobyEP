@@ -20,3 +20,7 @@ gh run script icmp_scan.py
 
 10.10.1.11 is reachable
 10.10.1.12 is reachable
+
+
+git init
+git remote add origin https://github.com/CyberPortfoliobyEP/AI.git
