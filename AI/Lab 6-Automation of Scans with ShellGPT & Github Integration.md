@@ -48,12 +48,17 @@ gh auth login
      - Open the GitHub login page in your browser and enter the code to authorize.
    - Confirm successful authentication.
 
+   ![Git Auth.](https://i.imgur.com/rziWXTC.png)
+   ![Git Auth.](https://i.imgur.com/zezbDe2.png)
+    
 2. **Clone the Repository:**
    - Clone the repository into your local machine:
 
 ```bash
 git clone https://github.com/CyberPortfolioByEP/CyberPortfolioByEP.git
 ```
+   ![Git Clone](https://i.imgur.com/tfa1Xbg.png)
+   
    - Navigate to the `AI` directory:
 
 ```bash
@@ -70,6 +75,8 @@ cd CyberPortfolioByEP/AI
 sgpt --chat scan --shell "Generate a Python script to perform an ICMP scan on the subnet 10.10.1.0/24"
 ```
    - ShellGPT will create a Python script, saving it as `icmp_scan.py` in your current directory.
+     
+   ![Generate Script](https://i.imgur.com/KGzf8lA.png)
 
 2. **Verify the Generated Script:**
    - Open the file using a text editor (e.g., `nano` or `pluma`):
@@ -92,6 +99,7 @@ mv ~/icmp_scan.py ~/CyberPortfolioByEP/AI/
 
 ```bash
 cd ~/CyberPortfolioByEP/AI/
+```
 
 ---
 
@@ -115,6 +123,8 @@ git commit
 ```bash
 git push origin main
 ```
+   ![Git push](https://i.imgur.com/jzG9K0F.png)
+
 ---
 
 ## Step 5: Execute the Script
@@ -127,7 +137,9 @@ python3 icmp_scan.py
 ```
 2. **Verify the Output:**
    - Confirm that the script scans the specified subnet and displays active hosts.
-
+     
+   ![Automation script results](https://i.imgur.com/oBqWA5e.png)
+   
 ---
 
 ## Summary
@@ -136,11 +148,5 @@ python3 icmp_scan.py
 
 1. Authentication with GitHub CLI and cloning the repository.
 2. Generating an ICMP scan script with ShellGPT.
-3. Committing and pushing the script to GitHub.
+3. Committing and pushing the script to GitHub via CLI.
 4. Executing the script to verify functionality.
-
-### Recommendations:
-
-- Regularly push changes to GitHub to maintain version control.
-- Use ShellGPT to streamline script generation for repetitive tasks.
-- Ensure the GitHub CLI is authenticated correctly to avoid connectivity issues.
