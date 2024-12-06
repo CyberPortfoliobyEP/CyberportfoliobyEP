@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This lab demonstrates how to use ShellGPT to generate a Python script for an ICMP network scan, integrate it into a GitHub repository, and automate the process for seamless workflow management. By following this lab, you will learn how to use ShellGPT for scripting and manage your code with GitHub CLI.
+This lab demonstrates how to use **ShellGPT** to generate a **Python script** for an **ICMP network scan**, integrate it into a **GitHub** repository, and automate the process for seamless workflow management. By following this lab, you will learn how to use ShellGPT for scripting and manage your code with GitHub CLI.
 
 ---
 
