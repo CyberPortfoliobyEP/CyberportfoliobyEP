@@ -26,10 +26,12 @@ The objective of this lab is to identify potential vulnerabilities and directori
 ### 1. Directory Bruteforcing with Gobuster
 
 **Command:**
+```bash
 gobuster dir -u http://10.10.1.22 -w /usr/share/dirb/wordlists/common.txt
-
+```
 **Description:**
 Gobuster was used to discover potential directories and files on the web server by iterating through a wordlist and analyzing HTTP status codes like `200`, `301`, `401`, and `403`.
+![Results](https://i.imgur.com/PRP3sCF.png)
 
 **Results:**
 - **Identified Directories:**
@@ -48,8 +50,9 @@ Gobuster was used to discover potential directories and files on the web server 
 ### 2. Vulnerability Scanning with Nikto
 
 **Command:**
+```bash
 nikto -h https://10.10.1.22
-
+```
 **Description:**
 Nikto was used to identify general web server vulnerabilities and insecure configurations.
 
@@ -66,10 +69,13 @@ Nikto was used to identify general web server vulnerabilities and insecure confi
 ### 3. Manual Header Analysis with Curl
 
 **Command:**
+```bash
 curl -I http://10.10.1.22
-
+```
 **Description:**
 Curl was used to retrieve HTTP headers from the web server and extract information such as server versions or technologies in use.
+
+![Results](https://i.imgur.com/KmBnIhX.png)
 
 **Results:**
 - **Server:** Microsoft-IIS/10.0
@@ -85,10 +91,12 @@ Curl was used to retrieve HTTP headers from the web server and extract informati
 ### 4. Directory Bruteforcing with FFuF
 
 **Command:**
+```bash
 ffuf -u http://10.10.1.22/FUZZ -w /usr/share/dirb/wordlists/common.txt
-
+```
 **Description:**
 FFuF was employed to discover directories on the web server. It supports multithreading and is optimized for fast scans.
+![Results](https://i.imgur.com/PqRpWPx.png)
 
 **Results:**
 - **Identified Directories:**
