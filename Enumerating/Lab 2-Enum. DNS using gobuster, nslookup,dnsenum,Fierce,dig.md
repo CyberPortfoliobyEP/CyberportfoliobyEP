@@ -24,14 +24,17 @@ The objective of this lab is to explore and utilize different tools for DNS enum
 Determine if the DNS server `10.10.1.22` is responsive and can resolve queries for the domain `ceh.com`.
 
 ### Command:
+```bash
 nslookup ceh.com 10.10.1.22
-
+```
 ### Result:
 From the screenshot:
 - The query successfully resolved the domain `ceh.com` using the DNS server `10.10.1.22`.
 - The server returned the following information:
   - **Name**: ceh.com
   - **Address**: 10.10.1.22
+    
+![Results](https://i.imgur.com/Xk6Qina.png)
 
 ### Explanation for Lack of Detailed Results:
 - The DNS server provided basic resolution (domain name to IP address) but did not return detailed DNS record types (e.g., MX, TXT, or CNAME records). 
@@ -52,8 +55,8 @@ From the screenshot:
   - NS Record: `server2022.ceh.com`
   - SOA Record: `hostmaster.ceh.com`
   - A Record: `10.10.1.22`
-- **Screenshot:** `3-1.png`
-
+    
+![Results](https://i.imgur.com/u3VQfgR.png)
 ---
 
 ### 3. DNS Enumeration with dnsenum
@@ -66,8 +69,8 @@ From the screenshot:
   - Found the DNS server: `server2022.ceh.com`
   - Detected additional subdomain: `adserver.ceh.com` with IP `10.10.1.20`.
   - Zone transfer failed (`AXFR record query failed`).
-- **Screenshot:** `3-2.png`
 
+![Results](https://i.imgur.com/u3FlQs4.png)
 ---
 
 ### 4. Subdomain Discovery with Fierce
@@ -79,7 +82,7 @@ From the screenshot:
 - **Results:**
   - Found subdomain: `adserver.ceh.com` at `10.10.1.20`.
   - Zone transfer attempts returned failures.
-- **Screenshot:** `3-3.png`
+![Results](https://i.imgur.com/BZyGkEr.png)
 
 ---
 
@@ -91,6 +94,9 @@ From the screenshot:
   Uses a wordlist to brute-force subdomains in the domain `ceh.com`.
 - **Wordlist Content:**
   The wordlist `/usr/share/dirb/wordlists/common.txt` contains common directory and subdomain names such as `.config`, `.git`, `ftp`, `mail`, `webmail`.
+![Results](https://i.imgur.com/TrXbkAm.png)
+![Results](https://i.imgur.com/TY2MkEL.png)
+
 - **Results:**
   - Found multiple subdomains:
     - `e.ceh.com`
@@ -101,7 +107,6 @@ From the screenshot:
     - `smtp.ceh.com`
     - `webmail.ceh.com`
     - `www.ceh.com`
-- **Screenshot:** `gobuster.png`
 
 ---
 
