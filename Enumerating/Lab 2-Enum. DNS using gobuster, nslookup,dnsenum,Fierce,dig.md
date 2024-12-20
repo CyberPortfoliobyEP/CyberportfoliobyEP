@@ -46,8 +46,9 @@ From the screenshot:
 
 ### 2. Advanced DNS Queries using dig
 - **Command:**
+  ```bash
   dig @10.10.1.22 ceh.com ANY  
-
+```
 - **Description:**
   Queries the DNS server for all record types for the domain `ceh.com`.
 - **Results:**
@@ -61,8 +62,9 @@ From the screenshot:
 
 ### 3. DNS Enumeration with dnsenum
 - **Command:**
+```bash
   dnsenum --dnsserver 10.10.1.22 ceh.com  
-
+```
 - **Description:**
   Enumerates DNS records and tests zone transfers while attempting to brute-force subdomains using a predefined wordlist.
 - **Results:**
@@ -75,8 +77,9 @@ From the screenshot:
 
 ### 4. Subdomain Discovery with Fierce
 - **Command:**
+```bash
   fierce --domain ceh.com --dns-servers 10.10.1.22  
-
+```
 - **Description:**
   A reconnaissance tool used for locating non-contiguous IP spaces by testing for subdomains and DNS vulnerabilities.
 - **Results:**
@@ -88,8 +91,9 @@ From the screenshot:
 
 ### 5. Subdomain Brute-Forcing with Gobuster
 - **Command:**
+```bash
   gobuster dns -d ceh.com -w /usr/share/dirb/wordlists/common.txt  
-
+```
 - **Description:**
   Uses a wordlist to brute-force subdomains in the domain `ceh.com`.
 - **Wordlist Content:**
