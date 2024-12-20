@@ -18,19 +18,27 @@ The objective of this lab is to explore and utilize different tools for DNS enum
 
 ## Conducted Techniques and Results
 
-### 1. DNS Lookup using nslookup
-- **Command:**
-  nslookup  
-  server 10.10.1.22  
-  set q=any  
-  ceh.com  
+## 1. DNS Server Lookup
 
-- **Description:**
-  Queries the DNS server for records of type "ANY" to obtain all available information.
-- **Results:**
-  The server returned an error message `SERVFAIL`. This indicates a failure in resolving DNS records. No useful information was retrieved.
-- **Screenshot:** `1.png`
+### Objective:
+Determine if the DNS server `10.10.1.22` is responsive and can resolve queries for the domain `ceh.com`.
 
+### Command:
+nslookup ceh.com 10.10.1.22
+
+### Result:
+From the screenshot:
+- The query successfully resolved the domain `ceh.com` using the DNS server `10.10.1.22`.
+- The server returned the following information:
+  - **Name**: ceh.com
+  - **Address**: 10.10.1.22
+
+### Explanation for Lack of Detailed Results:
+- The DNS server provided basic resolution (domain name to IP address) but did not return detailed DNS record types (e.g., MX, TXT, or CNAME records). 
+- This could be due to:
+  - Limited permissions or restrictions on the queried DNS server.
+  - The absence of additional DNS records configured for the domain.
+  - The DNS server only hosting minimal configuration for resolving the primary domain.
 ---
 
 ### 2. Advanced DNS Queries using dig
