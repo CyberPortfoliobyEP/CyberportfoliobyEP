@@ -46,7 +46,7 @@ From the screenshot:
 
 ### 2. Advanced DNS Queries using dig
 - **Command:**
-  ```bash
+```bash
   dig @10.10.1.22 ceh.com ANY  
 ```
 - **Description:**
