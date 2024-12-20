@@ -22,11 +22,12 @@ The objective of this lab is to enumerate a target server using various scanners
 
 ### **1. Enumerating SMB User Accounts**
 
-Command:  
+**Command:**
+```bash
 use auxiliary/scanner/smb/smb_enumusers  
 set RHOSTS 10.10.1.22  
 run  
-
+```
 **Expected Outcome:**  
 This module attempts to list user accounts available on the SMB service running on the target server. 
  
@@ -43,11 +44,12 @@ The identified usernames can be utilized for potential brute-force or pass-the-h
 
 ### **2. Retrieving HTTP Version and Server Details**
 
-Command:  
+**Command:**  
+```bash
 use auxiliary/scanner/http/http_version  
 set RHOSTS 10.10.1.22  
 run  
-
+```
 **Expected Outcome:**  
 This module identifies the HTTP version and additional details about the web server.  
 
@@ -64,11 +66,12 @@ The identified server software may contain vulnerabilities that can be exploited
 
 ### **3. SNMP Enumeration**
 
-Command:  
+**Command:**  
+```bash
 use auxiliary/scanner/snmp/snmp_enum  
 set RHOSTS 10.10.1.22  
 run  
-
+```
 **Expected Outcome:**  
 The module retrieves SNMP information, including users, network adapters, and system details.  
 
