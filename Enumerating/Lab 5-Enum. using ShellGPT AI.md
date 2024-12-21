@@ -91,7 +91,7 @@ DNS records discovered:
 **Command**:
 ```bash
 sgpt --chat scan --shell "analyze the HTTP header and interpret the results for http://10.10.1.22"
-``
+```
 **Execution Details**:  
 ShellGPT processed the query and used Curl for analyzing HTTP headers.
 
@@ -100,7 +100,7 @@ ShellGPT processed the query and used Curl for analyzing HTTP headers.
 curl -I http://10.10.1.22
 ```
 
-[img](https://i.imgur.com/0p82TpR.png)
+![img](https://i.imgur.com/0p82TpR.png)
 
 **Results**:  
 HTTP headers retrieved:
