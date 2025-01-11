@@ -38,7 +38,7 @@ This lab focuses on setting up a foundational Microsoft 365 and Azure environmen
      - **Initial Domain Name**: hexelo47281568.onmicrosoft.com  
      - **Location**: United States  
 
-![img]https://i.imgur.com/xIWoMDX.png[/img]
+![img](https://i.imgur.com/xIWoMDX.png)
 
 2. **Adding Organization Information**:
    - Navigated to the Microsoft 365 Admin Center (`https://admin.microsoft.com`).  
@@ -47,7 +47,7 @@ This lab focuses on setting up a foundational Microsoft 365 and Azure environmen
      - **Name**: Hexelo47281568  
      - **Address**: 1 Microsoft Way, Redmond, WA, 98052, United States  
 
-![img]https://i.imgur.com/JmrUXAl.png[/img]
+![img](https://i.imgur.com/JmrUXAl.png)
 
 3. **Recording Credentials**:
    - Saved the following credentials for future labs:
