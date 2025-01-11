@@ -1,7 +1,7 @@
 # AZ-Lab 1 Report: Provisioning and Configuring Microsoft 365 and Azure Environments
 
 ---
-> **_This lab was created and executed on the CYBRARY platform, a leading online training provider for cybersecurity professionals. The platform's virtual labs and cloud-based environments are designed to simulate real-world scenarios. The configuration of this lab, including the location in Washington and the specific use of a Microsoft 365 trial account, follows CYBRARY's guidelines to ensure compatibility with their global infrastructure. As such, decisions like the deployment location and the creation of user accounts (e.g., Dan Park) were guided by these instructional frameworks._**
+> **_This lab was created and executed on the CYBRARY platform (www.cybrary.com), a leading online training provider for cybersecurity professionals. The platform's virtual labs and cloud-based environments are designed to simulate real-world scenarios. The configuration of this lab, including the location in Washington and the specific use of a Microsoft 365 trial account, follows CYBRARY's guidelines to ensure compatibility with their global infrastructure. As such, decisions like the deployment location and the creation of user accounts (e.g., Dan Park) were guided by these instructional frameworks._**
 >
 > 
 ## 1. Lab Details
