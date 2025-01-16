@@ -12,7 +12,7 @@ The purpose of this lab is to create an architecture that supports both **attack
 
 This architecture is designed to facilitate hands-on testing and demonstrate security features in Microsoft Azure and UTM. The following diagram illustrates the setup:
 
-![Setup Architecture](Setup.png)
+![Setup Architecture](https://i.imgur.com/IfvPzDt.png)
 
 ---
 
@@ -48,7 +48,6 @@ This architecture is designed to facilitate hands-on testing and demonstrate sec
        - Web-based Office applications (e.g., Word, Excel, PowerPoint).
        - OneDrive storage for cloud-based scenarios.
 
-![Architecture](https://i.imgur.com/IfvPzDt.png)
 ---
 
 ## **Steps**
@@ -62,12 +61,10 @@ The Azure portal was used to register and set up the platform for security opera
 
 In the **Microsoft 365 Admin Center**, the following actions were performed:
 - Licenses **EMS E5**, **Intune Suite**, and **Microsoft 365 Business Standard** were purchased and assigned as follows:
-  - **Admin User:** EMS E5 and Intune Suite.
+  - **Admin User:** EMS E5 and Intune Suit, and Business Standard.
   - **Markus Ruehl:** EMS E5, Intune Suite, and Business Standard.
 
 ![img](https://i.imgur.com/rHADmIh.png)
-
-![img](https://i.imgur.com/vlan9Wg.png)
 
 ---
 
@@ -107,7 +104,3 @@ The architecture is fully set up and ready for lab execution. Key accomplishment
 - Configuration of virtual machines in UTM.
 - Verification of user login and email functionality on the Windows VM.
 - The architecture is prepared for the execution of planned labs (1–7), covering attack and defense scenarios, as well as compliance and governance.
-
----
-
-Let me know if additional steps or modifications are needed! 😊
