@@ -13,7 +13,6 @@
 
 ## 1. Erstellung eines Microsoft Azure-Kontos und Subscription
 
-### Einleitung
 In diesem Abschnitt wird die grundlegende Einrichtung eines Microsoft Azure-Kontos beschrieben. Ein aktives Konto mit einer gültigen Subscription ist eine unverzichtbare Voraussetzung für alle weiteren Schritte, wie die Bereitstellung von Cloud-Diensten und die Lizenzierung.
 
 ### Schritte zur Erstellung eines Azure-Kontos und Aktivierung einer Subscription:
@@ -30,15 +29,14 @@ In diesem Abschnitt wird die grundlegende Einrichtung eines Microsoft Azure-Kont
    - Zunächst wurde eine kostenlose Testversion aktiviert. Nach Ablauf der Testphase wurde die Subscription auf das Modell „Pay-as-you-go“ umgestellt.
    - Die aktive Subscription stellt sicher, dass alle notwendigen Azure-Dienste, wie Intune und Windows 365, genutzt werden können.
 
-4. **Überprüfung der Subscription:**
-   - Aufruf des Azure-Portals unter [portal.azure.com](https://portal.azure.com/).
-   - Prüfung des Status der Subscription im Bereich **Kostenverwaltung + Abrechnung**.
+Diese Subscription ist die oberste Instanz worauf alle weiteren Produkte laufen sollen wie .B. Lizenzen, Services und weiteres.In meinem Fall **"Azure Subscription 1"**
+
+![img](https://i.imgur.com/sqZQcsV.png)
 
 ---
 
 ## 2. Vergleich zwischen Azure Virtual Desktop, Windows 365 und Microsoft Business Premium
 
-### Einleitung
 Dieser Abschnitt beschreibt die Entscheidungsfindung bei der Wahl zwischen Azure Virtual Desktop (AVD), Windows 365 und Microsoft Business Premium. Ziel ist es, die Unterschiede und Vorteile jeder Lösung herauszuarbeiten und darzulegen, warum Windows 365 und die Microsoft 365 E5 Lizenz den Anforderungen besser entsprachen.
 
 ### Vergleich der Plattformen und Lizenzen:
@@ -53,6 +51,10 @@ Dieser Abschnitt beschreibt die Entscheidungsfindung bei der Wahl zwischen Azure
 - **Kostenmodell:** Festes monatliches Abrechnungsmodell pro Benutzer, ideal für planbare Budgets.
 - **Zero-Trust-Sicherheit:** Zentrale Verwaltung über Microsoft Intune und Multi-Faktor-Authentifizierung.
 - **Zielgruppe:** Unternehmen, die eine unkomplizierte und sichere Cloud-Desktop-Lösung suchen.
+
+Hier auch ein Vergleich Animation zwischen Microsoft 365 und Azure Virtual Desktop Solution:
+![img](https://i.imgur.com/ZZg2ove.png)
+![img](https://i.imgur.com/HJoXr8y.png)
 
 #### Microsoft Business Premium
 - **Kostengünstiger:** Geeignet für kleine Unternehmen mit weniger komplexen Anforderungen.
@@ -77,7 +79,6 @@ Die Wahl fiel bewusst nicht auf Microsoft Business Premium, da folgende Anforder
 
 ## 3. Kauf und Zuweisung der Microsoft 365 E5 Lizenz und Windows 365 Cloud-PC-Lizenz
 
-### Einleitung
 In diesem Abschnitt wird der Kauf und die Zuweisung der Microsoft 365 E5 Lizenz sowie der Windows 365 Cloud-PC-Lizenz beschrieben. Beide Lizenzen sind notwendig, da die Microsoft 365 E5 Lizenz die Sicherheits- und Verwaltungsfunktionen bietet und die Cloud-PC-Lizenz die eigentliche Nutzung eines Windows 365 PCs ermöglicht.
 
 ### Schritte zum Kauf und zur Zuweisung:
@@ -87,18 +88,46 @@ In diesem Abschnitt wird der Kauf und die Zuweisung der Microsoft 365 E5 Lizenz 
 
 2. **Windows 365 Cloud-PC-Lizenz:**
    - Erwerb der Lizenz „Windows 365 Enterprise 2 vCPU, 8 GB, 128 GB“.
-   - Diese Lizenz ist erforderlich, damit Benutzer der Zielgruppe einen Cloud-PC provisioniert bekommen können.
+   - Diese Lizenz ist **erforderlich**, damit Benutzer der Zielgruppe einen Cloud-PC provisioniert bekommen können.
+![img](https://i.imgur.com/tmWBHDH.png)
 
 3. **Zuweisung:**
    - Beide Lizenzen wurden dem globalen Administrator-Account **popal.e@popaleoutlook.onmicrosoft.com** zugewiesen.
+     
+![img](https://i.imgur.com/BLRBkMB.png)
 
+P.S.:
+ Ich habe noch dazu eine Microsoft Intune Suite Lizenz dazugekauft für weitere Lab Szenarios. Der granulare Unterschied zwischen Microsoft 365 E5 und eine Intune Suite sind folgende:
+	•	**Remote Help**: Sicherer Remote-Support für Benutzergeräte, ideal für BYOD-Szenarien.
+	•	**Endpoint Privilege Management (EPM)**: Temporäre Admin-Rechte für Benutzer, ohne Sicherheitsrisiken.
+	•	**Automatisiertes Drittanbieter-App-Management**: Patch-Updates für Apps wie Adobe oder Chrome.
+	•	**Erweiterte Compliance**: Automatische Behebung von Richtlinienverstößen auf Geräten.
+	•	**Advanced Endpoint Analytics**: Proaktive Fehlererkennung und -vermeidung (z. B. Abstürze).
+	•	**Microsoft Tunnel**: Sichere App-Verbindungen und Zugriff, speziell für mobile Mitarbeiter.
+	•	**Mehr Sicherheit und Effizienz**: Verbesserte Verwaltung und Schutz von BYOD- und Unternehmensgeräten.
+
+Für kleinere Unternehmen in nicht Risikobehafteten Infrastrukturen reicht jedoch eine Microsoft 365 E5 Lizenz vollkommen aus.
 ---
 
-## 4. Gruppen- und Policy-Erstellung in Intune
+## 4. Gruppen-Einstellung in Intune
 
-### Einleitung
 Nach dem Kauf und der Zuweisung der Lizenzen wurde eine Sicherheitsgruppe erstellt, um die Provisionierung der Cloud-PCs zu vereinfachen.
+Hierbei gibts es in Azure 2 Optionen bei der Art der Gruppe: Security & Microsoft 365. Der Granulare Unterschied sind natürlich die Sicerheitsmechanismen, die man bei der Security Group hat.
+Hier eine kurze Tabelle über die Unterschied:
+### Tabelle: Vergleich von Security Groups und Microsoft 365 Groups
 
+| **Feature**                     | **Security Group**                             | **Microsoft 365 Group**                    |
+|----------------------------------|-----------------------------------------------|--------------------------------------------|
+| **Primärer Zweck**               | Zugriffskontrolle und Sicherheitsverwaltung   | Kollaboration und Kommunikation            |
+| **Verwendung für Berechtigungen**| ✅ Zugriff auf Ressourcen und Rollenverwaltung | ❌ Nicht für Berechtigungen geeignet       |
+| **Geräteunterstützung**          | ✅ Kann Benutzer und Geräte enthalten          | ❌ Unterstützt nur Benutzer                |
+| **Dynamische Mitgliedschaft**    | ✅ Unterstützt automatische Regeln             | ❌ Keine dynamischen Regeln                |
+| **Intune-Integration**           | ✅ Vollständig integriert                      | ❌ Nicht für Richtlinien geeignet          |
+| **Integration mit Conditional Access** | ✅ Kann für MFA- und Sicherheitsrichtlinien genutzt werden | ❌ Nicht unterstützt            |
+| **Rollenbasierte Zugriffskontrolle (RBAC)** | ✅ Direkte Zuweisung von Rollen möglich        | ❌ Nicht für RBAC geeignet                 |
+| **Kollaborationsfunktionen**     | ❌ Keine Kollaborationsressourcen enthalten    | ✅ Enthält Mailbox, Planner und Teams      |
+| **Mailfunktionalität**           | ❌ Nicht enthalten                             | ✅ Integrierte Mailbox und Kalender        |
+| **Typische Anwendungsfälle**     | Sicherheitsgruppen, Zugriffskontrolle, Gerätemanagement | Teams-Kanäle, E-Mail, Projektmanagement   |
 ### Schritte zur Erstellung:
 1. **Erstellen einer Sicherheitsgruppe:**
    - Navigieren zu **Gruppen → Neue Gruppe erstellen** unter [intune.microsoft.com](https://intune.microsoft.com/).
@@ -107,11 +136,12 @@ Nach dem Kauf und der Zuweisung der Lizenzen wurde eine Sicherheitsgruppe erstel
 
 2. **Zuweisung der Sicherheitsgruppe:**
    - Der globalen Administrator **popal.e@popaleoutlook.onmicrosoft.com** wurde als Mitglied hinzugefügt.
+
+![img](https://i.imgur.com/o24lCAX.png)
 ---
 
 ## 5. Provisionierung eines Windows 365 Cloud-PCs
 
-### Einleitung
 Die Provisionierung eines Windows 365 Cloud-PCs ist ein zentraler Schritt, um einen virtuellen Arbeitsplatz bereitzustellen. In diesem Abschnitt wird beschrieben, wie eine Provisioning-Policy erstellt wurde und warum bestimmte Entscheidungen, wie die Auswahl eines Standard-Images, getroffen wurden.
 
 ### Schritte zur Provisionierung eines Windows 365 Cloud-PCs:
@@ -146,11 +176,11 @@ Die Provisionierung eines Windows 365 Cloud-PCs ist ein zentraler Schritt, um ei
 6. **Zuweisung der Gruppe:**
    - Die zuvor erstellt Sicherheitsgruppe „Windows365-EntraID“ wurde der Provisioning-Policy zugewiesen.
 
+![img](https://i.imgur.com/i0bN1S8.png)
 ---
 
 ## 6. Analyse von Bereitstellungsproblemen und Fehlerbehebung
 
-### Einleitung
 Während der Bereitstellung des Windows 365 Cloud-PCs traten Probleme auf, die eine Anpassung der Einstellungen erforderten. Dieser Abschnitt beschreibt die auftretenden Fehler und deren Lösung.
 
 ### Beschreibung der Fehler:
@@ -166,11 +196,20 @@ Während der Bereitstellung des Windows 365 Cloud-PCs traten Probleme auf, die e
 - Aktivierung der Mobile Device Management Authority gemäß [Microsoft-Dokumentation](https://learn.microsoft.com/en-us/mem/intune/fundamentals/mdm-authority-set).
 - Anpassung der Konfiguration im Intune Admin Center.
 
+![img](https://i.imgur.com/iSUwsGU.png)
+
+![img](https://i.imgur.com/pSCWDqs.png)
+
+![img](https://i.imgur.com/AnkIlNj.png)
+
+Verifizierung, dass der Cloud PC auch bereitgestellt ist und nutzbar ist: Hierbei kann man ganz einfach auf die URL https://windows365.microsoft.com/ gehen und man sieht, dass man den bereitgestellten Cloud PC direkt benutzen kann.
+
+![img](https://i.imgur.com/KMTzxbe.png)
+
 ---
 
 ## 7. Zusammenfassung und Fazit
 
-### Einleitung
 Dieser Bericht dokumentiert die Einrichtung eines Microsoft Azure-Kontos, die Auswahl der geeigneten Lizenzen und die Bereitstellung eines Windows 365 Cloud-PCs. Der Fokus lag auf der Wahl einer sicheren, kosteneffizienten und einfach zu verwaltenden Lösung.
 
 ### Fazit:
