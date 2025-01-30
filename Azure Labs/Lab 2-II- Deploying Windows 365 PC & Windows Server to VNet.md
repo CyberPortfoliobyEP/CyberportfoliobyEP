@@ -76,7 +76,7 @@ This section describes the process of adding a Windows Server to the VNet for te
 
 **Connecting VM via Windows APP on MAC-Host:**  
 
-[Connection VM](https://i.imgur.com/AvaRkUr.png)
+![Connection VM](https://i.imgur.com/AvaRkUr.png)
 
 ---
 
@@ -96,7 +96,7 @@ This section describes the process of verifying the connection between the Windo
 
 > **Note:** A ping test is a network diagnostic tool used to test the connectivity between two devices. It sends ICMP (Internet Control Message Protocol) echo request packets to the target device and waits for a response. The results of the ping test show the round-trip time (RTT) for each packet, indicating the latency between the devices.
 
-!Screenshot: Successful ping test from Windows 365 Cloud PC to Windows Server](https://i.imgur.com/22djD89.png)
+![Screenshot: Successful ping test from Windows 365 Cloud PC to Windows Server](https://i.imgur.com/22djD89.png)
 
 ---
 
@@ -121,12 +121,3 @@ This lab successfully demonstrated the process of deploying a Windows 365 Cloud 
 - [Windows 365 Documentation](https://learn.microsoft.com/en-us/windows-365/)
 - [Intune Admin Center](https://endpoint.microsoft.com/)
 - [Customer Permissions Needed for Windows 365 Operations](https://learn.microsoft.com/en-us/windows-365/enterprise/customer-permissions)
-
----
-
-## Screenshots:
-**[Screenshot: New provisioning policy configuration in Intune Admin Center]**  
-**[Screenshot: Virtual machine configuration in Azure Portal]**  
-**[Screenshot: Connecting to the Windows Server via RDP]**  
-**[Screenshot: Disabling Windows Firewall on the Windows Server]**  
-**[Screenshot: Successful ping test from Windows 365 Cloud PC to Windows Server]**
