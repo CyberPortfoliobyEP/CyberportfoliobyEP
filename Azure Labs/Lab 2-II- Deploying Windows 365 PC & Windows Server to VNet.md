@@ -21,7 +21,7 @@ The lab covers the following key steps:
 
 > **Note:** The Azure Network Connection process can take up to an hour to complete, depending on the complexity of the setup and the resources involved.
 
-[Vizualization](https://i.imgur.com/Z55GuHV.png)
+![Vizualization](https://i.imgur.com/Z55GuHV.png)
 
 ---
 
