@@ -108,13 +108,13 @@ The **Deployment Cadence Settings** allow scheduling of updates for specific gro
 
 ## 4.5 Review + Create
 
-![Screenshot: Review + Create](https://imgur.com/VuHnck0)
+![Screenshot: Review + Create](https://imgur.com/VuHnck0.png)
 
 After reviewing the configuration, clicking **Create** initiates the deployment process, applying update policies to the assigned groups.
 
 ## 4.6 Adjusting Update Settings
 
-![Screenshot: Autopatch Update Settings](https://imgur.com/bTv1NJa)
+![Screenshot: Autopatch Update Settings](https://imgur.com/bTv1NJa.png)
 
 Update settings were adjusted to allow:
 
@@ -126,7 +126,7 @@ Update settings were adjusted to allow:
 
 ## 4.7 Monitoring Deployment Status
 
-![Screenshot: Update Rings Deployment](https://imgur.com/ZA31ztm)
+![Screenshot: Update Rings Deployment](https://imgur.com/ZA31ztm.png)
 
 Deployment status can be monitored via **Devices > Windows Updates > Update Rings**. The process may take up to 2 hours, depending on the environment.
 
