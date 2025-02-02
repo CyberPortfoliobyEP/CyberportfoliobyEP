@@ -1,5 +1,5 @@
 
-# Lab IV - Intune: Utilizing Autopatch for Windows Devices
+# Lab 2-IV- Intune: Utilizing Autopatch for Windows Devices
 
 ## Table of Contents
 1. [Introduction](#1-introduction)
