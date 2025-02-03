@@ -1,4 +1,4 @@
-# Lab 3-II -Intune Security: Implementing Compliance Policies
+# Lab 3-II-Intune Security - Implementing Compliance Policies
 
 ## Table of Contents
 1. [Introduction](#1-introduction)
