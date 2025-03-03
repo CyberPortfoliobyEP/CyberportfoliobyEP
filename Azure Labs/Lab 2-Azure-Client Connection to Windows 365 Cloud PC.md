@@ -1,4 +1,4 @@
-# Lab 1-II - Client Connection to Windows 365 Cloud PC
+# Lab Report - Client Connection to Windows 365 Cloud PC
 
 ## 1. Using the Windows 365 Client App
 

@@ -1,4 +1,4 @@
-# Lab 3-III-Intune Security - Implementing Conditional Access Policies
+# Lab Report -Intune Security - Implementing Conditional Access Policies
 
 ## Table of Contents
 1. [Introduction](#1-introduction)
