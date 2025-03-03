@@ -95,8 +95,9 @@ To manually remediate these settings, **Group Policy** must be used.
 #### **Manually modifying Group Policy Settings**
 1. Open the **Group Policy Editor** using the following command:
 
-   **Bash:**  
+```shell 
    Win + R → gpedit.msc
+```
 
 2. Navigate to the following path:
    
@@ -106,9 +107,9 @@ To manually remediate these settings, **Group Policy** must be used.
 3. Locate the policy **‘Turn off Microsoft Defender AntiVirus’** and change its value to **Disabled**.
 4. Force an update with the following command:
 
-   **Bash:**  
+```shell 
    gpupdate /force
-
+```
 > **Screenshot: Group Policy Setting Change**  
 > ![Disable Policy 1](https://i.imgur.com/pAab9Un.png)
 
