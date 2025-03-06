@@ -1,6 +1,8 @@
+_Before you go further to watch my Portfolio, lets get inspired by this Masterpiece..._
+
 <center>
 
-  **_"Faithful unto death."_** - Sir Edward John Poynter (1836–1919)
+ **"Faithful unto death."** - Sir Edward John Poynter (1836–1919)
 
    During the excavations at Pompeii in the early 19th century,  
    the skeleton of a soldier in full armour was discovered.  
