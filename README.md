@@ -1,5 +1,3 @@
-_Before you go further to watch my Portfolio, lets get inspired by this Masterpiece..._
-
 <center>
 
  **"Faithful unto death."** - Sir Edward John Poynter (1836–1919)
@@ -11,9 +9,8 @@ _Before you go further to watch my Portfolio, lets get inspired by this Masterpi
  inhabitants of Pompeii were fleeing from the eruption  
 of Mount Vesuvius in 79 AD.  
 
-
 </center>
 
-![Faithful unto death](https://i.postimg.cc/XNrSKRs4/Bildschirmfoto-2025-03-04-um-00-40-23.png)
-
-References: https://www.britishmuseum.org/collection/object/P_1919-1023-16, https://www.livescience.com/soldier-skeleton-mount-vesuvius-rescue-mission.html
+<center>
+  <img src="https://i.imgur.com/p7I1E2F.jpeg" alt="Faithful unto death" width="50%">
+</center>
