@@ -14,3 +14,5 @@ of Mount Vesuvius in 79 AD.
 <center>
   <img src="https://i.imgur.com/p7I1E2F.jpeg" alt="Faithful unto death" width="50%">
 </center>
+References: 
+https://www.britishmuseum.org/collection/object/P_1919-1023-16; https://www.livescience.com/soldier-skeleton-mount-vesuvius-rescue-mission.html
