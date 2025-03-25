@@ -67,8 +67,29 @@ This repository documents hands-on labs covering attack techniques, defensive st
 > Hands-on configuration and security labs in **Microsoft Azure** and **Microsoft 365**.  
 > Focus on provisioning, endpoint hardening with **Microsoft Defender**, policy enforcement via **Intune**, and detection with **Microsoft Sentinel**.
 
-📂 See full lab list here: [Azure Labs Overview](#-azure-labs--21-labs)  
-(For brevity, full table can be inserted in a separate file or below.)
+| Lab | Topic | Description | Link |
+|-----|-------|-------------|------|
+| Lab 1 | Setting Up Microsoft Azure & Provisioning a Windows 365 Cloud PC | Create an Azure tenant and deploy a Cloud PC from the Azure portal | [View](./Azure%20Labs/Lab%2001-Azure-Setting%20Up%20a%20Microsoft%20Azure%20%26%20Provisioning%20a%20Windows%20365%20Cloud%20PC.md) |
+| Lab 2 | Client Connection to Windows 365 Cloud PC | Connect a local client to the provisioned Cloud PC using Azure AD login | [View](./Azure%20Labs/Lab%2002-Azure-Client%20Connection%20to%20Windows%20365%20Cloud%20PC.md) |
+| Lab 3 | Deprovisioning a Windows 365 Cloud PC | Safely remove Cloud PCs and manage licenses/resources | [View](./Azure%20Labs/Lab%2003-Azure-Deprovisioning%20a%20Windows%20365%20Cloud%20PC.md) |
+| Lab 4 | Creating a VNet for Windows 365 Cloud PC | Design a custom virtual network for Cloud PC management | [View](./Azure%20Labs/Lab%2004-Azure-Creating%20VNet%20for%20Windows365%20Cloud%20PC.md) |
+| Lab 5 | Deploying Windows 365 PC & Windows Server to VNet | Deploy a Cloud PC and a server to the same virtual network | [View](./Azure%20Labs/Lab%2005-Azure-%20Deploying%20Windows%20365%20PC%20%26%20Windows%20Server%20to%20VNet.md) |
+| Lab 6 | Intune – Device Configuration | Configure security and settings policies across devices | [View](./Azure%20Labs/Lab%2006-Intune-Implementing%20Device%20Configuration.md) |
+| Lab 7 | Intune – Compliance Policies | Enforce compliance based on device health and settings | [View](./Azure%20Labs/Lab%2007-Intune-Implementing%20Compliance%20Policies.md) |
+| Lab 8 | Intune – Conditional Access Policies | Protect apps and data based on user and device conditions | [View](./Azure%20Labs/Lab%2008-Intune-Implementing%20Conditional%20Access%20Policies.md) |
+| Lab 9 | Intune – Windows Autopatch | Automatically patch Microsoft 365 endpoints | [View](./Azure%20Labs/Lab%2009-Intune-Implementing%20Autopatch%20.md) |
+| Lab 10 | Microsoft Defender – Baseline Assessment | Configure and assess security baselines on endpoints | [View](./Azure%20Labs/Lab%2010-Defender-Configuring%20Baseline%20Assessment%20for%20Endpoints.md) |
+| Lab 11 | Microsoft Defender – Phishing Simulation | Simulate phishing attacks to test user awareness | [View](./Azure%20Labs/Lab%2011-Defender-Utilizing%20Phishing%20Campaign%20Simulation.md) |
+| Lab 12 | Microsoft Defender – Anti-Phishing Policy | Create mail protection policies against spoofing and phishing | [View](./Azure%20Labs/Lab%2012-Defender-Creating%20Phishing%20Policy.md) |
+| Lab 13 | Microsoft Defender – Investigate Malicious Email | Use Microsoft Threat Explorer to respond to threats | [View](./Azure%20Labs/Lab%2013-Defender-Investigate%20%26%20Respond%20to%20Malicious%20Mail.md) |
+| Lab 14 | Microsoft Sentinel – Initial Setup | Set up Microsoft Sentinel and log workspace | [View](./Azure%20Labs/Lab%2014-Sentinel-Setup%20Configuration.md) |
+| Lab 15 | Sentinel – Configure Data Sources | Connect Microsoft 365, Defender, and Azure AD to Sentinel | [View](./Azure%20Labs/Lab%2015-Sentinel-Configuring%20Data%20Sources.md) |
+| Lab 16 | Sentinel – Threat Intelligence (TAXII) | Integrate threat intelligence feeds via TAXII protocol | [View](./Azure%20Labs/Lab%2016-Sentinel-Configuring%20Threat%20Intelligence%20TAXII.md) |
+| Lab 17 | Sentinel – Create Detection Rules | Configure analytics rules for automated threat detection | [View](./Azure%20Labs/Lab%2017-Sentinel-Creating%20Rules.md) |
+| Lab 18 | Sentinel – Investigate with UEBA | Detect insider threats with user behavior analytics | [View](./Azure%20Labs/Lab%2018-Sentinel-%20Investigating%20with%20UEBA.md) |
+| Lab 19 | Connect VM to Log Analytics | Enable log analytics for Azure VM monitoring | [View](./Azure%20Labs/Lab%2019-Sentinel-Connecting%20New%20deployed%20VM%20to%20Log%20Analytics%20for%20Monitoring.md) |
+| Lab 20 | GitHub Copilot – Code Analysis | Use **GitHub Copilot** to detect potential vulnerabilities in code | [View](./Azure%20Labs/Lab%2020-Copilot-Malicious%20Code%20Analysis.md) |
+| Lab 21 | GitHub Copilot – Incident Investigation | AI-assisted investigation of security events | [View](./Azure%20Labs/Lab%2021-Copilot-Investigating%20Incidents.md) |
 
 ---
 
