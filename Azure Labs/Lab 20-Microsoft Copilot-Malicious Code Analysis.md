@@ -1,4 +1,4 @@
-# Lab 20-Copilot: Malicious Code Analysis
+# Lab 20-Microsoft Copilot: Malicious Code Analysis
 
 ## Table of Contents
 1. [Introduction](#1-introduction)
@@ -13,7 +13,7 @@
 
 ## 1. Introduction
 
-Microsoft **Security Copilot** is an **AI-powered security solution** that assists in **incident response, security investigations, and malicious code analysis**.  
+**Microsoft Copilot** is an **AI-powered security solution** that assists in **incident response, security investigations, and malicious code analysis**.  
 It integrates **Microsoft Defender XDR, Sentinel, Intune, and third-party security tools** to enhance **SOC operations**.
 
 ### **Key Benefits of Security Copilot**
@@ -56,7 +56,7 @@ Copilot assists in:
 
 #### **Steps to Deploy Copilot**
 1. Open **Azure Portal**.
-2. Search for **"Copilot for Security"**.
+2. Search for **"Microsoft Copilot for Security"**.
 3. Click **Create** and configure:
    - **Resource Group**: `CopilotforSecurity`
    - **Security Compute Units (SCUs)**:  
@@ -70,7 +70,7 @@ Copilot assists in:
 
 #### **Completing the Setup**
 1. Once deployed (**~1 min processing time**), go to:  
-   **[Security Copilot Setup](https://securitycopilot.microsoft.com/tour/admin)**
+   **[Microsoft Security Copilot Setup](https://securitycopilot.microsoft.com/tour/admin)**
 2. Default **RBAC roles**:
    - **Global Admin** & **Security Admin** = **Owners** (can manage plugins, access control, and prompts).
    - **Security Analysts** = Limited **read access**.
@@ -80,7 +80,7 @@ Copilot assists in:
 
 ### 2.3 Performing Suspicious Script Analysis
 
-Security Copilot assists in **malware reverse engineering** using **predefined prompt books**.
+Microsoft Security Copilot assists in **malware reverse engineering** using **predefined prompt books**.
 
 #### **Steps to Analyze a Malicious Script**
 1. Navigate to **Microsoft Security Copilot**.
@@ -143,7 +143,7 @@ Security Copilot supports **plugins** to integrate with:
 
 ## 3. Impact of Deployment
 
-### **Security Benefits of Security Copilot**
+### **Security Benefits of Microsoft Security Copilot**
 - **Accelerated threat analysis** using AI-powered **incident summarization**.
 - **Automated detection of malware & obfuscated scripts**.
 - **Guided remediation & response workflows**.
@@ -152,7 +152,7 @@ Security Copilot supports **plugins** to integrate with:
 
 > **Example Scenario:**  
 > - A **ransomware attack** is detected in **Microsoft Defender**.  
-> - Security Copilot **summarizes the attack** and provides **remediation steps**.  
+> - Microsoft Security Copilot **summarizes the attack** and provides **remediation steps**.  
 > - The **SOC team follows AI-generated recommendations** for **containment**.
 
 ---
