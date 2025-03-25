@@ -88,8 +88,8 @@ This repository documents hands-on labs covering attack techniques, defensive st
 | Lab 17 | Sentinel – Create Detection Rules | Configure analytics rules for automated threat detection | [View](./Azure%20Labs/Lab%2017-Sentinel-Creating%20Rules.md) |
 | Lab 18 | Sentinel – Investigate with UEBA | Detect insider threats with user behavior analytics | [View](./Azure%20Labs/Lab%2018-Sentinel-%20Investigating%20with%20UEBA.md) |
 | Lab 19 | Connect VM to Log Analytics | Enable log analytics for Azure VM monitoring | [View](./Azure%20Labs/Lab%2019-Sentinel-Connecting%20New%20deployed%20VM%20to%20Log%20Analytics%20for%20Monitoring.md) |
-| Lab 20 | GitHub Copilot – Code Analysis | Use **GitHub Copilot** to detect potential vulnerabilities in code | [View](./Azure%20Labs/Lab%2020-Copilot-Malicious%20Code%20Analysis.md) |
-| Lab 21 | GitHub Copilot – Incident Investigation | AI-assisted investigation of security events | [View](./Azure%20Labs/Lab%2021-Copilot-Investigating%20Incidents.md) |
+| Lab 20 | Microsoft Copilot – Code Analysis | Use **Microsoft Copilot** to detect potential vulnerabilities in code | [View](./Azure%20Labs/Lab%2020-Copilot-Malicious%20Code%20Analysis.md) |
+| Lab 21 | Microsoft Copilot – Incident Investigation | AI-assisted investigation of security events | [View](./Azure%20Labs/Lab%2021-Copilot-Investigating%20Incidents.md) |
 
 ---
 
