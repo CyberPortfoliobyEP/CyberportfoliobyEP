@@ -188,11 +188,4 @@ This repository documents hands-on labs covering attack techniques, defensive st
 
 ---
 
-## 📫 Contact
-
-📧 [Email me](mailto:your.email@example.com)  
-💼 [LinkedIn Profile](https://linkedin.com/in/your-profile)
-
----
-
 > 🔄 This portfolio is continuously updated with new labs, blue team scenarios, red team challenges, and real-world simulations!
