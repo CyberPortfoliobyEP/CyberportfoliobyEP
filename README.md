@@ -25,12 +25,13 @@ This repository documents hands-on labs covering attack techniques, defensive st
 
 | Certification / Course                             | Provider        |
 |----------------------------------------------------|-----------------|
+| ✅ CEH (Certified Ethical Hacker)                  | EC-Council      |
+| ✅ SC-200                                          | Microsoft       |
+| ✅ SC-900                                          | Microsoft       |
+| ✅ AZ-900                                          | Microsoft       |
 | ✅ Google Cybersecurity Certificate                | Google          |
 | ✅ ISC2 Certified in Cybersecurity (CC)            | ISC2            |
 | ✅ CompTIA Security+                               | CompTIA         |
-| ✅ SC-900                                          | Microsoft       |
-| ✅ AZ-900                                          | Microsoft       |
-| ✅ CEH (Certified Ethical Hacker)                  | EC-Council      |
 | ✅ MITRE ATT&CK® Foundation                        | AttackIQ        |
 | ✅ ITIL 4 Foundation                               | PeopleCERT      |
 | ✅ NIST Cybersecurity Framework Foundation         | Infosec         |
